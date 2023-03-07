@@ -16,7 +16,7 @@ namespace utilities
 {
 #define vtpl_utilities_get_environment_value(value, default_value)  vtpl::utilities::get_environment_value(#value, default_value)
 
-std::string get_environment_value(const std::string& value, const std::string& default_value);
+std::string ENVUTIL_EXPORT get_environment_value(const std::string& value, const std::string& default_value);
 } // namespace utilities
 } // namespace vtpl
 #endif // file_utilities_h
