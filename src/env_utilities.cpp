@@ -30,13 +30,13 @@ std::string vtpl::utilities::get_environment_value(const std::string& value, con
 {
   std::string variable_name(value);
   trim(variable_name);
-  std::cout << "Searching for environment variable: " << variable_name << std::endl;
+  // std::cout << "Searching for environment variable: " << variable_name << std::endl;
 
   if (Poco::Environment::has(variable_name)) {
     return Poco::Environment::get(variable_name);
   }
   std::transform(variable_name.begin(), variable_name.end(), variable_name.begin(), ::toupper);
-  std::cout << "Searching for environment variable: " << variable_name << std::endl;
+  // std::cout << "Searching for environment variable: " << variable_name << std::endl;
   if (Poco::Environment::has(variable_name)) {
     return Poco::Environment::get(variable_name);
   }
