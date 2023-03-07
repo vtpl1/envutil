@@ -3,8 +3,8 @@
 // *****************************************************
 
 #pragma once
-#ifndef file_utilities_h
-#define file_utilities_h
+#ifndef env_utilities_h
+#define env_utilities_h
 
 #include <string>
 #include <envutil_export.h>
@@ -19,4 +19,4 @@ namespace utilities
 std::string ENVUTIL_EXPORT get_environment_value(const std::string& value, const std::string& default_value);
 } // namespace utilities
 } // namespace vtpl
-#endif // file_utilities_h
+#endif // env_utilities_h
